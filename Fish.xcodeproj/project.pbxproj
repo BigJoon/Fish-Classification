@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76A6BF9222E7F0480085E2F8 /* Dascyllus reticulatus .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76A6BF9122E7F0480085E2F8 /* Dascyllus reticulatus .jpg */; };
 		76B2ED2722E1C78F001FD912 /* FishClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 76B2ED2622E1C78F001FD912 /* FishClassifier.mlmodel */; };
 		76B2ED2B22E33D21001FD912 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B2ED2A22E33D21001FD912 /* Launch Screen.storyboard */; };
 		76C149AE212CC860008E974C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76C149AD212CC85F008E974C /* LICENSE.txt */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		59C9961059C8910000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		59DB5CA059DEAA4000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		76A6BF9122E7F0480085E2F8 /* Dascyllus reticulatus .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Dascyllus reticulatus .jpg"; path = "../../../Dascyllus reticulatus .jpg"; sourceTree = "<group>"; };
 		76B2ED2622E1C78F001FD912 /* FishClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FishClassifier.mlmodel; path = ../../../Documents/FishClassifier.mlmodel; sourceTree = "<group>"; };
 		76B2ED2A22E33D21001FD912 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		76C149AD212CC85F008E974C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				76D66BB62138B7FA00AEF9D9 /* Agapanthus.jpg */,
+				76A6BF9122E7F0480085E2F8 /* Dascyllus reticulatus .jpg */,
 				76D66BB12138B7FA00AEF9D9 /* Bougainvillea.jpg */,
 				76D66BAE2138B7F900AEF9D9 /* Fertilizer.jpg */,
 				76D66BB42138B7FA00AEF9D9 /* Ivy.jpg */,
@@ -224,6 +227,7 @@
 				76C149AE212CC860008E974C /* LICENSE.txt in Resources */,
 				76D66BBA2138B7FA00AEF9D9 /* Bougainvillea.jpg in Resources */,
 				76D66BBE2138B7FA00AEF9D9 /* Verbena.jpg in Resources */,
+				76A6BF9222E7F0480085E2F8 /* Dascyllus reticulatus .jpg in Resources */,
 				76B2ED2B22E33D21001FD912 /* Launch Screen.storyboard in Resources */,
 				76D66BB72138B7FA00AEF9D9 /* Fertilizer.jpg in Resources */,
 				76D66BC5213A1AF300AEF9D9 /* Assets.xcassets in Resources */,

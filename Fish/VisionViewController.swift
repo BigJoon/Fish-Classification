@@ -26,7 +26,7 @@ class VisionViewController: ViewController {
     private var currentlyAnalyzedPixelBuffer: CVPixelBuffer?
     
     // Queue for dispatching vision classification and barcode requests
-    private let visionQueue = DispatchQueue(label: "com.example.apple-samplecode.Fish.serialVisionQueue")
+    private let visionQueue = DispatchQueue(label: "com.example.apple-samplecode.FlowerShop.serialVisionQueue")
     var productViewOpen = false
     
     fileprivate func showProductInfo(_ identifier: String) {
@@ -176,6 +176,7 @@ class VisionViewController: ViewController {
         }
     }
     
+    
     private func showDetectionOverlay(_ visible: Bool) {
         DispatchQueue.main.async(execute: {
             // perform all the UI updates on the main queue
@@ -185,6 +186,8 @@ class VisionViewController: ViewController {
     
     override func setupAVCapture() {
         super.setupAVCapture()
+        //testing part
+        
         
         // setup Vision parts
         setupLayers()
@@ -198,7 +201,7 @@ class VisionViewController: ViewController {
         detectionOverlay = CALayer()
         detectionOverlay.bounds = self.view.bounds.insetBy(dx: 20, dy: 20)
         detectionOverlay.position = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
-        detectionOverlay.borderColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 0.2, 0.7])
+        detectionOverlay.borderColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [0.5, 0.0, 1.0, 0.7])
         detectionOverlay.borderWidth = 8
         detectionOverlay.cornerRadius = 20
         detectionOverlay.isHidden = true

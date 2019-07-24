@@ -12,15 +12,25 @@ import Vision
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     var rootLayer: CALayer! = nil
-    
+    //private var baseZoomFanctor: CGFloat = 1.0
+    //private var videoDevice1: AVCaptureDevice?
     @IBOutlet weak private var previewView: UIView!
     
+    
     private let session = AVCaptureSession()
+    
+    
+   
     
     private var previewLayer: AVCaptureVideoPreviewLayer! = nil
     private let videoDataOutput = AVCaptureVideoDataOutput()
     
     private let videoDataOutputQueue = DispatchQueue(label: "VideoDataOutput", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
+    
+    
+    
+    
+    
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         // Implement this in the subclass.
@@ -29,6 +39,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAVCapture()
+        //self.setupPinchGestureRecognizer()
+
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,9 +49,12 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func setupAVCapture() {
         var deviceInput: AVCaptureDeviceInput!
         
+
         // Select a video device and make an input.
         let videoDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .back).devices.first
         do {
@@ -73,7 +89,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             return
         }
         let captureConnection = videoDataOutput.connection(with: .video)
-        
+
         // Always process the frames.
         captureConnection?.isEnabled = true
         
@@ -84,11 +100,44 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         rootLayer = previewView.layer
         previewLayer.frame = rootLayer.bounds
         rootLayer.insertSublayer(previewLayer, at: 0)
+        
     }
+    /*
+    private func setupPinchGestureRecognizer() {
+        // pinch recognizer for zooming
+        let pinchGestureRecognizer: UIPinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(self.onPinchGesture(_:)))
+        self.view.addGestureRecognizer(pinchGestureRecognizer)
+    }
+ 
     
+    @objc private func onPinchGesture(_ sender: UIPinchGestureRecognizer) {
+        if sender.state == .began {
+            self.baseZoomFanctor = (self.videoDevice1?.videoZoomFactor)!
+        }
+        
+        let tempZoomFactor: CGFloat = self.baseZoomFanctor * sender.scale
+        let newZoomFactdor: CGFloat
+        if tempZoomFactor < (self.videoDevice1?.minAvailableVideoZoomFactor)! {
+            newZoomFactdor = (self.videoDevice1?.minAvailableVideoZoomFactor)!
+        } else if (self.videoDevice1?.maxAvailableVideoZoomFactor)! < tempZoomFactor {
+            newZoomFactdor = (self.videoDevice1?.maxAvailableVideoZoomFactor)!
+        } else {
+            newZoomFactdor = tempZoomFactor
+        }
+        
+        do {
+            try self.videoDevice1?.lockForConfiguration()
+            self.videoDevice1?.ramp(toVideoZoomFactor: newZoomFactdor, withRate: 32.0)
+            self.videoDevice1?.unlockForConfiguration()
+        } catch {
+            print("Failed to change zoom factor.")
+        }
+    }
+   
+    */
     func startCaptureSession() {
         session.startRunning()
-        
+
     }
     
     // Clean up capture setup.

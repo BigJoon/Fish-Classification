@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Dascyllus reticulatus </key>
+	<dict>
+		<key>description</key>
+		<string>Dascyllus reticulatus</string>
+		<key>label</key>
+		<string>Dascyluus</string>
+	</dict>
 	<key>Agapanthus</key>
 	<dict>
 		<key>label</key>

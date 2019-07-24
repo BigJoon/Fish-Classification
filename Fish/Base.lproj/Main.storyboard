@@ -20,6 +20,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Xve-Vf-Vow" appends="YES" id="67g-ZU-0Ui"/>
+                            <outletCollection property="gestureRecognizers" destination="Xve-Vf-Vow" appends="YES" id="BXQ-3e-Rz5"/>
+                            <outletCollection property="gestureRecognizers" destination="Xve-Vf-Vow" appends="YES" id="OIx-km-mLE"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="SCAM" id="0A1-Zz-KXw"/>
                     <connections>
@@ -28,6 +34,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer delaysTouchesBegan="YES" id="Xve-Vf-Vow"/>
             </objects>
             <point key="canvasLocation" x="1135.2" y="132.68365817091455"/>
         </scene>
