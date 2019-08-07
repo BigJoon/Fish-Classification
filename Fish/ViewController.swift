@@ -9,7 +9,11 @@ import UIKit
 import AVFoundation
 import Vision
 
-class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate   {
+    
+    
+   
+    
     
     var rootLayer: CALayer! = nil
     //private var baseZoomFanctor: CGFloat = 1.0
@@ -56,6 +60,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
 
         // Select a video device and make an input.
+        
+        //This Discovery session is for to find available camera on device
+        //After find device we need to connect them to our capture session
         let videoDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .back).devices.first
         do {
             deviceInput = try AVCaptureDeviceInput(device: videoDevice!)

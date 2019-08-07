@@ -2,68 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Amphiprion clarkii </key>
+	<dict>
+		<key>description</key>
+		<string>우리의 니~~모!</string>
+		<key>label</key>
+		<string>니모물고기</string>
+	</dict>
+	<key>Abudefduf vaigiensis </key>
+	<dict>
+		<key>description</key>
+		<string>Abudefduf vaigiensis </string>
+		<key>label</key>
+		<string>Abudefduf</string>
+	</dict>
 	<key>Dascyllus reticulatus </key>
 	<dict>
 		<key>description</key>
 		<string>Dascyllus reticulatus</string>
 		<key>label</key>
 		<string>Dascyluus</string>
-	</dict>
-	<key>Agapanthus</key>
-	<dict>
-		<key>label</key>
-		<string>Agapanthus</string>
-		<key>description</key>
-		<string>The Agapanthus flower.</string>
-	</dict>
-	<key>Bougainvillea</key>
-	<dict>
-		<key>label</key>
-		<string>Bougainvillea</string>
-		<key>description</key>
-		<string>The Bougainvillea flower.</string>
-	</dict>
-	<key>Ivy</key>
-	<dict>
-		<key>label</key>
-		<string>Ivy</string>
-		<key>description</key>
-		<string>The Ivy flower.</string>
-	</dict>
-	<key>Jasmine</key>
-	<dict>
-		<key>label</key>
-		<string>Jasmine</string>
-		<key>description</key>
-		<string>The Jasmine flower.</string>
-	</dict>
-	<key>Tansy</key>
-	<dict>
-		<key>label</key>
-		<string>Tansy</string>
-		<key>description</key>
-		<string>The Tansy flower.</string>
-	</dict>
-	<key>Trumpet_creeper</key>
-	<dict>
-		<key>label</key>
-		<string>Trumpet Creeper</string>
-		<key>description</key>
-		<string>The Trumper Creeper flower.</string>
-	</dict>
-	<key>Verbena</key>
-	<dict>
-		<key>label</key>
-		<string>Verbena</string>
-		<key>description</key>
-		<string>The Verbena flower.</string>
-	</dict>
-	<key>Fertilizer</key>
-	<dict>
-		<key>label</key>
-		<string>Fertilizer</string>
-		<key>description</key>
-		<string>Fertilizer helps your flowers grow.</string>
 	</dict>
 </dict>
 </plist>
