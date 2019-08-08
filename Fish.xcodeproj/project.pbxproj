@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		766753E322F8133E0061EE9B /* Fishv3ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 766753E222F8133E0061EE9B /* Fishv3ImageClassifier.mlmodel */; };
+		766753E722FABA740061EE9B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766753E622FABA740061EE9B /* WebViewController.swift */; };
+		766753E922FABCFB0061EE9B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766753E822FABCFB0061EE9B /* WebKit.framework */; };
+		766753EB22FBC2860061EE9B /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766753EA22FBC2860061EE9B /* MapController.swift */; };
+		766753ED22FBC44F0061EE9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766753EC22FBC44F0061EE9B /* MapKit.framework */; };
 		76A60ACD22F7F1560079CF79 /* Fishv2ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 76A60ACC22F7F1560079CF79 /* Fishv2ImageClassifier.mlmodel */; };
 		76A60AD722F800240079CF79 /* Amphiprion clarkii .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76A60AD622F800240079CF79 /* Amphiprion clarkii .jpg */; };
 		76A60AD922F800350079CF79 /* Abudefduf vaigiensis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76A60AD822F800350079CF79 /* Abudefduf vaigiensis.jpg */; };
@@ -30,6 +34,10 @@
 		59C9961059C8910000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		59DB5CA059DEAA4000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		766753E222F8133E0061EE9B /* Fishv3ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Fishv3ImageClassifier.mlmodel; path = ../../../Documents/Fishv3ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		766753E622FABA740061EE9B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		766753E822FABCFB0061EE9B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		766753EA22FBC2860061EE9B /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		766753EC22FBC44F0061EE9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		76A60ACC22F7F1560079CF79 /* Fishv2ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Fishv2ImageClassifier.mlmodel; path = ../../../Documents/Fishv2ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		76A60AD622F800240079CF79 /* Amphiprion clarkii .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amphiprion clarkii .jpg"; sourceTree = "<group>"; };
 		76A60AD822F800350079CF79 /* Abudefduf vaigiensis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abudefduf vaigiensis.jpg"; sourceTree = "<group>"; };
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766753ED22FBC44F0061EE9B /* MapKit.framework in Frameworks */,
+				766753E922FABCFB0061EE9B /* WebKit.framework in Frameworks */,
 				FAA391EE20B5D2570085DA28 /* CoreML.framework in Frameworks */,
 				FAA391EC20B5D2510085DA28 /* Vision.framework in Frameworks */,
 				FAA391EA20B5D2480085DA28 /* UIKit.framework in Frameworks */,
@@ -103,6 +113,8 @@
 		FAA391E820B5D2480085DA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				766753EC22FBC44F0061EE9B /* MapKit.framework */,
+				766753E822FABCFB0061EE9B /* WebKit.framework */,
 				FAA391ED20B5D2570085DA28 /* CoreML.framework */,
 				FAA391EB20B5D2510085DA28 /* Vision.framework */,
 				FAA391E920B5D2480085DA28 /* UIKit.framework */,
@@ -138,6 +150,8 @@
 				FA2ECFD220B7C9FB00C480B0 /* ProductViewController.swift */,
 				FAD500A01ED668B60074D713 /* ViewController.swift */,
 				FAB417F52099308400494E9C /* VisionViewController.swift */,
+				766753E622FABA740061EE9B /* WebViewController.swift */,
+				766753EA22FBC2860061EE9B /* MapController.swift */,
 				76B2ED2A22E33D21001FD912 /* Launch Screen.storyboard */,
 				FAD500A21ED668B60074D713 /* Main.storyboard */,
 				766753E222F8133E0061EE9B /* Fishv3ImageClassifier.mlmodel */,
@@ -226,10 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766753EB22FBC2860061EE9B /* MapController.swift in Sources */,
 				766753E322F8133E0061EE9B /* Fishv3ImageClassifier.mlmodel in Sources */,
 				FAB417F62099308400494E9C /* VisionViewController.swift in Sources */,
 				FAD500A11ED668B60074D713 /* ViewController.swift in Sources */,
 				FAD5009F1ED668B60074D713 /* AppDelegate.swift in Sources */,
+				766753E722FABA740061EE9B /* WebViewController.swift in Sources */,
 				FA2ECFD320B7C9FB00C480B0 /* ProductViewController.swift in Sources */,
 				76A60ACD22F7F1560079CF79 /* Fishv2ImageClassifier.mlmodel in Sources */,
 			);

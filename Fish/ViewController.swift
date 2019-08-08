@@ -19,6 +19,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     //private var baseZoomFanctor: CGFloat = 1.0
     //private var videoDevice1: AVCaptureDevice?
     @IBOutlet weak private var previewView: UIView!
+    ///////////////////////////////////
+    
+    
+    
+    
+    
+    ///////////////////////////////////
+    
     
     
     private let session = AVCaptureSession()
