@@ -1,5 +1,5 @@
-##App LOGO(Designed By JMG)
-![Showing App logo.](Documentation/Fish_App_logo.jpeg)
+## App LOGO(Designed By JMG)
+![Showing App logo.](Documentation/Fish_App_logo.jpeg){: width="100" height="100"}
 
 # Training a Create ML Model to Classify Fish
 
