@@ -6,7 +6,7 @@ Train a fish classifier using Create ML in Swift Playgrounds, and apply the resu
 
 To classify images in real time, we need a classification model with the categories you’d like identified, and a way to capture images to feed to the classifier.
 
-//![Block diagram showing how images used to train a Create ML model help classify images in a Vision app.]//(Documentation/VisionCreateML_2x.png)
+![Block diagram showing how images used to train a Create ML model help classify images in a Vision app.](Documentation/CreateML_Dataflow.jpeg)
 
 This sample code project contains two components: a Create ML model you train in Swift Playgrounds, and the iOS app, which you use to classify different fish types. This project uses the same code as the robot shop demo in the WWDC 2018 session [Vision with Core ML](https://developer.apple.com/videos/play/wwdc2018/717/).
 
