@@ -1,3 +1,6 @@
+##App LOGO(Designed By JMG)
+(Documentation/Fish_App_logo.jpeg)
+
 # Training a Create ML Model to Classify Fish
 
 Train a fish classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
@@ -191,6 +194,8 @@ The sample shows the top result, but in a search app, you can rank the labels by
 ## Release Your Buffers
 
 After processing your buffers, be sure to release them to prevent them from queuing up. Because the input is a capture device that is constantly streaming frames, your app will run out of memory quickly if you don’t discard extra frames. The sample app limits the number of queued frame buffers to only one, which prevents overflow from happening and clears the buffer by setting it to `nil`:
+
+
 
 ```
 self.currentlyAnalyzedPixelBuffer = nil
