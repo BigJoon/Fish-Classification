@@ -1,7 +1,7 @@
 ## App LOGO(Designed by JMG)
 
-<center><img src = "https://github.com/BigJoon/HCLOUD/blob/master/Documentation/Fish_App_logo.jpeg?raw=true" width=120 height=120></center>
-\
+<center><img src = "https://github.com/BigJoon/HCLOUD/blob/master/Documentation/Fish_App_logo.jpeg?raw=true" width=140 height=140></center>
+
 
 # Training a Create ML Model to Classify Fish
 
